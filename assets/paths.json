@@ -1,0 +1,11 @@
+{
+    "games":
+    [
+        {
+            "id":"basketball-stars",
+            "name":"Basketball Stars",
+            "img":"/images/basketballstars",
+            "files":"/games/basketball-stars/index.html"
+        }
+    ]
+}
