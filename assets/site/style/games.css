@@ -1,0 +1,56 @@
+.game {
+  width: 30vh;
+  height: 30vh;
+  outline: none;
+  border: solid 0px #00000000;
+  border-radius: 4vh;
+  text-transform: capitalize;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-flex;
+  align-items: end;
+  justify-content: center;
+  transform: scale(1);
+  transition: all ease-in-out 0.2s;
+  z-index: 0;
+  text-decoration: none;
+  margin: 2vh;
+}
+
+.fade {
+  display: flex;
+  padding: 2vh;
+  align-items: last baseline;
+  justify-content: center;
+  text-align: center;
+  height: 75%;
+  width: 100%;
+  opacity: 0;
+  transition: all ease-in-out 0.2s;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.game .fade span {
+  opacity: 0;
+  transition: all ease-in-out 0.2s;
+  font-size: 3.5vh;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.game:hover .fade,
+.game:hover .fade span {
+  opacity: 1;
+}
+
+.game:hover {
+  transform: scale(1.1);
+}
+
+.games {
+  padding: 20px;
+  height: fit-content;
+  width: 100%;
+}
