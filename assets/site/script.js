@@ -1,0 +1,40 @@
+const games = document.getElementById("games");
+let i = 0;
+fetch("https://cdn.jsdelivr.net/gh/Wande-inc/unblooked/client/paths.json")
+  .then(response => response.json())  // Parse JSON
+  .then(data => {
+    data.forEach(item => {
+        i++;
+        games.innerHTML = `${games.innerHTML}<button onclick="openGame('${item.id}', '${item.name}')" id="game${i}" class="game" style="background-image: url('https://cdn.jsdelivr.net/gh/Wande-inc/unblooked/client/${item.id}/img.${item.img}');"><div class="fade"><span>${item.name}</span></div></button>`;
+    });
+  })
+
+  function openGame(url, name) {
+    document.getElementById("iframeBox").innerHTML = `<div id="gameHolder"><iframe src="iframe.html" frameborder="0" id="iframe"></iframe><div><span id="iframeName">${name}</span><button onclick="fullscreen()" id="fullscreen"><span class="tooltiptext">!Will Refresh Page!</span</button></div></div>`
+    const iframe = document.getElementById("iframe");
+    iframe.onload = function() { const message = {
+    action: "executeFunction",
+    data: { param1: url }}
+    
+      iframe.contentWindow.postMessage(message, "*");
+    }
+    iframe.src = iframe.src
+    }
+
+let isFull = false;
+
+function fullscreen() {
+  const fullscreenItem = document.getElementById("iframe");
+  const fullscreenButton = document.getElementById("fullscreen");
+  if (isFull) {
+    fullscreenButton.classList.remove("fsButton");
+    fullscreenItem.classList.remove("fullScreen");
+    fullscreenItem.src = fullscreenItem.src;
+    isFull = false;
+  } else {
+    fullscreenButton.className = "fsButton";
+    fullscreenItem.className = "fullScreen";
+    fullscreenItem.src = fullscreenItem.src;
+    isFull = true;
+  }
+}
