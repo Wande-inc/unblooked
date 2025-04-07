@@ -14,4 +14,4 @@ Ways to play:
 <br>
 <a href="https://unblooked.w3spaces.com/school.html">W3spaces</a>
 <br>
-<a href="">Download and open unblooked_index.html</a>
+<a href="#unblooked-beta">Download and open unblooked_index.html</a>
