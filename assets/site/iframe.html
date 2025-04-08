@@ -16,7 +16,9 @@
             .then((response) => response.text())
             .then((htmlContent) => {
               document.open();
-              document.write(htmlContent);
+              document.write(
+                htmlContent + "<style>html {background-color: #000;}</style>"
+              );
               document.close();
             });
         }
