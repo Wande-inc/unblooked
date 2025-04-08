@@ -10,8 +10,6 @@ Links to Download:<br>
 <br><br>
 Ways to play:
 <br>
-<a href="https://bit.ly/unblooked">Google Scripts</a> (https://bit.ly/unblooked)
-<br>
 <a href="https://unblooked.w3spaces.com/school.html">W3spaces</a>
 <br>
 <a href="#unblooked-beta">Download and open unblooked_index.html</a>
