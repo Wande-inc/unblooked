@@ -8,8 +8,11 @@ Links to Download:<br>
 <br><br>
 <b>The files you download are made so you don't have to re-download them for updates!</b>
 <br><br>
-Ways to play:
+<b>Ways to play:
 <br>
 <a href="https://unblooked.w3spaces.com/school.html">W3spaces</a>
 <br>
 <a href="#unblooked-beta">Download and open unblooked_index.html</a>
+<br><br>
+Current games:
+<br>Slope<br>Basketball Stars<br>Snow Rider 3d<br>Minecraft (in development)</b>
