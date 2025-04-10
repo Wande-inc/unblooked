@@ -13,5 +13,10 @@
         "id":"snow-rider-3d",
         "name":"Snow Rider 3d",
         "img":"jpg"
+    },
+    {
+        "id":"minecraft",
+        "name":"minecraft",
+        "img":"png"
     }
 ]
