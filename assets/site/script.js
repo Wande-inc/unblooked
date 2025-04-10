@@ -1,6 +1,18 @@
 const games = document.getElementById("games");
 let i = 0;
-fetch("https://raw.githubusercontent.com/Wande-inc/unblooked/refs/heads/main/client/paths.json")
+async function getFileSizeBrowser(file) {
+  return file.size;
+}
+
+let jsonLink = "";
+
+if (getFileSizeBrowser("https://raw.githubusercontent.com/Wande-inc/unblooked/refs/heads/main/client/paths.json") >= getFileSizeBrowser("https://cdn.jsdelivr.net/gh/Wande-inc/unblooked/client/paths.json")) {
+  jsonLink = "https://raw.githubusercontent.com/Wande-inc/unblooked/refs/heads/main/client/paths.json";
+} else {
+  jsonLink = "https://cdn.jsdelivr.net/gh/Wande-inc/unblooked/client/paths.json";
+}
+
+fetch(jsonLink)
   .then(response => response.json())  // Parse JSON
   .then(data => {
     data.forEach(item => {
