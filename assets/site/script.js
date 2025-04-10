@@ -1,6 +1,6 @@
 const games = document.getElementById("games");
 let i = 0;
-fetch("https://cdn.jsdelivr.net/gh/Wande-inc/unblooked/client/paths.json")
+fetch("https://raw.githubusercontent.com/Wande-inc/unblooked/refs/heads/main/client/paths.json")
   .then(response => response.json())  // Parse JSON
   .then(data => {
     data.forEach(item => {
