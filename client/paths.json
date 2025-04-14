@@ -18,5 +18,10 @@
         "id":"minecraft",
         "name":"minecraft",
         "img":"png"
+    },
+    {
+        "id":"moto-x3m",
+        "name":"moto x3m 2",
+        "img":"jpg"
     }
 ]
