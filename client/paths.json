@@ -23,5 +23,10 @@
         "id":"moto-x3m",
         "name":"moto x3m 2",
         "img":"jpg"
+    },
+    {
+        "id":"paper-io",
+        "name":"paper io 2",
+        "img":"png"
     }
 ]
