@@ -21,6 +21,10 @@ nav a {
   font-weight: 550;
 }
 
+.colored {
+  color: #0390fc;
+}
+
 .space {
   height: 12vh;
   width: 100vw;
