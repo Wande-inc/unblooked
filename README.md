@@ -15,4 +15,4 @@ Links to Download:<br>
 <a href="#unblooked-beta">Download and open unblooked_index.html</a>
 <br><br>
 Current games:
-<br>Slope<br>Basketball Stars<br>Snow Rider 3d<br>Minecraft<br>Moto x3m 2</b>
+<br>Slope<br>Basketball Stars<br>Snow Rider 3d<br>Minecraft<br>Moto x3m 2<br>Paper.io 2</b>
