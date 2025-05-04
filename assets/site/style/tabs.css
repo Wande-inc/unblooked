@@ -1,0 +1,506 @@
+#popular {
+  /*Display */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /*Box model */
+  width: 100%;
+  height: 90%;
+  /*Miscellaneous*/
+  gap: 2%;
+}
+
+.section {
+  /*Display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*Box model */
+  width: 47%;
+  height: 90%;
+  border-radius: 15px;
+  background-color: transparent;
+  /*Miscellaneous*/
+  gap: 2%;
+}
+
+.playable {
+  /*Box model */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bigMovie,
+.oMovies,
+.bigGame,
+.sGame,
+.fa-play,
+.backdrop,
+.backdrop span {
+  /*Manipulations */
+  transition: all ease-out 0.2s;
+}
+
+#bigMovie:hover,
+.oMovies:hover,
+.bigGame:hover,
+.sGame:hover {
+  /*Manipulations */
+  transform: scale(1.02);
+}
+
+.playable:hover .fa-play,
+.playable:hover .backdrop span {
+  /*Display */
+  align-items: center;
+  /*Manipulations */
+  opacity: 1;
+}
+
+.playable:active .fa-play,
+.playable:active .backdrop span {
+  /*Manipulations */
+  opacity: 0.1;
+}
+
+.playable:hover {
+  /*Miscellaneous*/
+  cursor: pointer;
+}
+
+#bigMovie:active,
+.oMovies:active,
+.bigGame:active,
+.sGame:active {
+  /*Manipulations */
+  transform: scale(0.98);
+}
+
+.backdrop {
+  /*Display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /*Box model */
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+.backdrop div,
+.backdrop span {
+  /*Box model */
+  width: 100%;
+  height: 20%;
+  padding: 0 3%;
+  /*Typography */
+  font-size: 3vmin;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.backdrop span {
+  /*Display */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  /*Box model */
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  /*Typography */
+  color: #ffffff;
+  /*Manipulations */
+  opacity: 0;
+}
+
+.backdrop:hover {
+  /*Box model */
+  border-radius: 15px;
+  /*Miscellaneous*/
+  backdrop-filter: blur(1px) brightness(55%);
+  /* border: 0.5vmin solid #ff6464; */
+}
+
+.backdrop:active {
+  /*Box model */
+  border-color: #ff646425;
+  /*Miscellaneous*/
+  backdrop-filter: blur(2px) brightness(70%);
+}
+
+.fa-play {
+  /*Positioning */
+  z-index: 4;
+  /*Typography */
+  font-size: 5vmin;
+  text-shadow: -1px -1px 0 #ff6464, 1px -1px 0 #ff6464, -1px 1px 0 #ff6464,
+    1px 1px 0 #ff6464;
+  color: #ff6464;
+  /*Manipulations */
+  opacity: 0;
+}
+
+/* Popular - movies */
+
+#bigMovie,
+#otherMovies {
+  /*Box model */
+  width: 95%;
+  border-radius: 15px;
+}
+
+#bigMovie {
+  /*Box model */
+  background-color: #000;
+  /*Miscellaneous*/
+  aspect-ratio: 16 / 9;
+}
+
+#otherMovies {
+  /*Display */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*Box model */
+  height: 20%;
+  background-color: transparent;
+}
+
+#bigMovie button {
+  /*Box model */
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: #111;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.oMovies {
+  /*Box model */
+  height: 80%;
+  border-radius: 15px;
+  /*Miscellaneous*/
+  aspect-ratio: 16 / 9;
+}
+
+.oMovies button {
+  /*Box model */
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: #111;
+}
+
+/* Popular - games */
+
+#top,
+#bottom {
+  /*Display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*Box model */
+  width: 95%;
+  height: 45%;
+  background-color: transparent;
+  /*Miscellaneous*/
+  gap: 3%;
+}
+
+.bigGame {
+  /*Box model */
+  height: 100%;
+  /*Miscellaneous*/
+  aspect-ratio: 1 / 1;
+}
+
+.bigGame button,
+.sGame button {
+  /*Box model */
+  border-radius: 15px;
+  background-color: #111;
+}
+
+.smallGames {
+  /*Display */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  /*Box model */
+  height: 100%;
+  /*Miscellaneous*/
+  list-style: none;
+  gap: 1%;
+  aspect-ratio: 1 / 1;
+}
+
+.sGame {
+  /*Display */
+  display: inline-block;
+  flex: none;
+  /*Box model */
+  height: 47%;
+  /*Miscellaneous*/
+  aspect-ratio: 1 / 1;
+}
+
+/* Games, movies, and Search */
+
+#games,
+#movies,
+#search {
+  /*Box model */
+  width: 100%;
+  height: fit-content;
+  min-height: 100%;
+}
+
+#search {
+  /*Display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /*Box model */
+  padding-top: 2%;
+  /*Miscellaneous*/
+  gap: 5%;
+}
+
+.gameDiv,
+.movieDiv,
+.searchCon {
+  /*Display */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*Box model */
+  height: fit-content;
+  margin: 2vmin 0;
+  padding: 0 5%;
+  /*Miscellaneous*/
+  row-gap: 2vmin;
+  column-gap: 2vmin;
+}
+
+.searchCon {
+  /*Box model */
+  width: 100%;
+  padding: 0 !important;
+  /*Miscellaneous*/
+  gap: 0 !important;
+}
+
+.searchCon .gameDiv,
+.searchCon .movieDiv {
+  /*Box model */
+  width: 95%;
+  padding: 0 !important;
+}
+
+.gameDiv .bigGame,
+.movieDiv .oMovies {
+  /*Box model */
+  height: 30vmin;
+}
+
+.search {
+  /*Display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*Box model */
+  width: 100%;
+  height: 10vmin;
+  margin: 2vmin 0;
+  padding: 0;
+  /*Miscellaneous*/
+  user-select: none;
+}
+
+.search input {
+  /*Box model */
+  width: 60%;
+  padding-left: 1%;
+  border: solid 2px #ff6464;
+  border-right: none;
+  border-radius: 999px 0 0 999px;
+  outline: none;
+  background-color: #000;
+  /*Typography */
+  color: #fff;
+}
+
+.search button,
+.search input {
+  /*Box model */
+  height: 90%;
+  /*Typography */
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+.search input::placeholder {
+  /*Typography */
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.search button {
+  /*Display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*Box model */
+  width: 5%;
+  border: solid 2px #ff6464;
+  border-left: none;
+  border-radius: 0 999px 999px 0;
+  background-color: #000;
+  /*Manipulations */
+  transition: 0.3s all ease;
+  /*Miscellaneous*/
+  cursor: pointer;
+}
+
+.search button .fa-search {
+  /*Typography */
+  color: #fff;
+}
+
+/* Iframe */
+
+#iframe {
+  /*Display */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  /*Box model */
+  width: 100%;
+  height: 90%;
+}
+
+#gameHolder iframe {
+  /*Display */
+  display: block;
+  /*Box model */
+  height: 70vh;
+  margin: 10px;
+  border: solid 3px #ff6464;
+  border-radius: 4vh;
+  background-color: #111 !important;
+  /*Miscellaneous*/
+  aspect-ratio: 16 / 9;
+}
+
+#iframeName {
+  /*Display */
+  display: inline-block;
+  /*Box model */
+  padding-top: 0;
+  /*Typography */
+  font-size: 6vh;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+#gameHolder {
+  /*Display */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*Box model */
+  width: fit-content;
+  height: fit-content;
+  border-radius: 4vh;
+  background-color: transparent;
+  /*Typography */
+  font-weight: 550;
+}
+
+.iframeBox {
+  /*Display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*Box model */
+  width: 100%;
+}
+
+#gameHolder div {
+  /*Display */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*Box model */
+  width: calc(100% - 20px);
+  padding: 10px;
+}
+
+#fullscreen {
+  /*Box model */
+  width: 6vh;
+  height: 6vh;
+  border: solid 2px #000;
+  border-radius: 1vh;
+  background-image: url("https://cdn.jsdelivr.net/gh/Wande-inc/unblooked/assets/site/img/fullscreen.svg");
+  background-size: cover;
+}
+
+.fullScreen {
+  /*Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  /*Box model */
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  /*Miscellaneous*/
+  overflow: hidden !important;
+}
+
+.fsButton {
+  /*Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 11;
+  /*Manipulations */
+  opacity: 0.8;
+}
+
+.tooltiptext {
+  /*Positioning */
+  position: absolute;
+  z-index: 1;
+  /*Box model */
+  width: 120px;
+  padding: 5px 0;
+  border-radius: 6px;
+  background-color: black;
+  /*Typography */
+  text-align: center;
+  color: #fff;
+  /*Miscellaneous*/
+  visibility: hidden;
+}
+
+#fullscreen:hover .tooltiptext {
+  /*Miscellaneous*/
+  visibility: visible;
+}
