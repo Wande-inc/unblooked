@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script>
+      fetch("https://cdn.jsdelivr.net/gh/Wande-inc/unblooked@latest/assets/site/index.html")
+        .then(response => response.text())
+        .then(htmlContent => {
+          fetch("https://cdn.jsdelivr.net/gh/Wande-inc/unblooked@latest/assets/site/main.js")
+            .then(response => response.text())
+            .then(javascriptContent => {
+              document.open();
+              document.write(htmlContent);
+              document.write(`<script>${javascriptContent}<\/script>`); // Escaping closing tag
+              document.write(`<scriptdisable-devtool-auto=""src="https://cdn.jsdelivr.net/npm/disable-devtool"><\/script>`);
+              document.close();
+            });
+        });
+    </script>
+  </body>
+</html>
