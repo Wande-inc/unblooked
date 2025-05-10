@@ -7,6 +7,7 @@ Links to Download:<br>
 <a href="https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FWande-inc%2Funblooked%2Ftree%2Fmain%2Fdownload">Download Github Directory</a>
 <br><br>
 <b>The files you download are made so you don't have to re-download them for updates!</b>
+<br><b>IMPORTANT! The files are locked! In unblooked_index.html change locked.js to unlocked.js to unlock it</b>
 <br><br>
 <b>Ways to access:
 <br>
